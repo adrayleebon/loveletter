@@ -1,0 +1,67 @@
+<!doctype html>
+<html> 
+ <head> 
+  <title>Letter</title> 
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: mediumpurple;
+      color: blue;
+      padding: 50px;
+    }
+    
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      color: #cc0000;
+    }
+    
+    p {
+      font-size: 24px;
+      line-height: 1.5;
+      margin: 20px 0;
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    
+    p.show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    
+    p:last-child {
+      font-style: italic;
+      text-align: right;
+    }
+    
+    p:nth-last-child(2) {
+      text-align: right;
+      margin-top: 50px;
+    }
+    
+    h9 {
+      text-align: center;
+    }
+  </style> 
+  <script>
+    window.addEventListener('load', function() {
+      const paragraphs = document.querySelectorAll('p');
+      const paragraph = document.querySelectorAll
+        ('h9');
+      paragraphs.forEach(function(paragraph) {
+        setTimeout(function() {
+          paragraph.classList.add('show');
+        }, 500);
+      });
+    });
+  </script> 
+ </head> 
+ <body> 
+  <h1>Happy Monthsary Mahal! </h1> 
+  <p>02-21-23</p> 
+  
+  
+  <h9>No matter what it takes, for this short period if time, weve experience ups and downs, but those were some amazing moments with you. I promise that I will love you for As long as possible. I love you Endlessly because thats what I am Feeling right now. Im missing you every minute of every day and even when Im with you. Everything stops when we were together, and Everything seems right When Im with you. Each every moment I have ever spend with you is a reminder of how perfect we are together.</h9>
+ 
+</body></html>
